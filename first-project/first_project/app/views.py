@@ -25,4 +25,5 @@ def time_view(request):
 
 def workdir_view(request):
     f = listdir()
-    return HttpResponse(f)
+    msg = f'Содержимое рабочей директории: {f}'
+    return HttpResponse(msg)
